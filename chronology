@@ -1,0 +1,20 @@
+#LOADING FUNCTIONS
+source("functions.R")
+source("BaconModified.R")
+
+##################################################################################
+#BACON
+##################################################################################
+
+#params
+thick<-30
+d.by<-1
+core.name="GGv1"
+acc.mean=54
+acc.shape=1
+mem.strength=0.8
+mem.mean=0.5
+# mem.strength * (1 - mem.mean) #should be smaller than 1
+
+Bacon(core.name, acc.mean=acc.mean, acc.shape=acc.shape, mem.mean=mem.mean, mem.strength=mem.strength, thick=thick, d.by=d.by, ask=FALSE, suggest=FALSE, plot.pdf=TRUE, depths.file=FALSE, normal=FALSE, rotate.axes=FALSE)
+
